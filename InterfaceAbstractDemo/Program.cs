@@ -19,6 +19,16 @@ namespace InterfaceAbstractDemo
                 NationalityId = "12345678901"
             
             });
+
+            StarbucksCustomerManager starbucksCustomerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
+            starbucksCustomerManager.AddStar(new Customer 
+            {
+                Id=2,
+                FirstName = "Bill",
+                LastName = "Gates",
+                DateOfBirth = new DateTime(1800,01,01),
+                NationalityId  = "43211232"
+            });
         }
     }
 }
