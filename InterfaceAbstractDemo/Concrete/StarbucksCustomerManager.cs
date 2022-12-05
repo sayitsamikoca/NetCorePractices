@@ -6,13 +6,18 @@ using InterfaceAbstractDemo.Entities;
 
 namespace InterfaceAbstractDemo.Concrete
 {
-    public class StarbucksCustomerManager:BaseCustomerManager
+    public class StarbucksCustomerManager : BaseCustomerManager,IAddStar
     {
         ICustomerCheckService _customerCheckService;
 
         public StarbucksCustomerManager(ICustomerCheckService customerCheckService)
         {
             _customerCheckService = customerCheckService;
+        }
+
+        public void AddStar(Customer customer)
+        {
+            Console.WriteLine("Sayın: "+customer.FirstName + " " + customer.LastName +" Yıldızınız Hesabınıza Eklendi");
         }
 
         public override void Save(Customer customer)
@@ -25,10 +30,6 @@ namespace InterfaceAbstractDemo.Concrete
             {
                 Console.WriteLine("Not a valid person");
             }
-            
-            
         }
-
-
     }
 }
