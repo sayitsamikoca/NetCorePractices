@@ -8,7 +8,7 @@
 ### 🎈 Bu repo da neler yapıyorum ?
 - C# öğrendiğim süreçte öğrendiklerimi deniyorum
 - Farklı kaynaklardan yada farklı makalelerden okuyup , izleyip öğrendiklerimi burada kodluyor ve pekiştiriyorum.
-- Olabildiğince örnek buluyor ve kodluyorum. Herhngi öğrendiğim yeni birşeyi gerçek hayat senaryosu üzerinden kodlamaya çalışıyorum
+- Olabildiğince örnek buluyor ve kodluyorum. Herhangi öğrendiğim yeni birşeyi gerçek hayat senaryosu üzerinden kodlamaya çalışıyorum
 
 </br>
 
