@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Reflection;
 
 namespace Reflection
 {
@@ -13,9 +15,13 @@ namespace Reflection
             // Ben buradakileri Reflection ile yapmak istiyorum , yani çalışma anında.
 
             var tip = typeof(Dortİslem);
-            Dortİslem dortİslem = (Dortİslem)Activator.CreateInstance(tip,6,7);
-            Console.WriteLine(dortİslem.Topla(4,5));
-            Console.WriteLine(dortİslem.Topla2());
+            //Dortİslem dortİslem = (Dortİslem)Activator.CreateInstance(tip,6,7);
+            //Console.WriteLine(dortİslem.Topla(4,5));
+            //Console.WriteLine(dortİslem.Topla2());
+
+            var instance = Activator.CreateInstance(tip,6,5);
+            MethodInfo methodInfo = instance.GetType().GetMethod("Topla2");
+            Console.WriteLine(methodInfo.Invoke(instance, null));
 
 
         }
